@@ -1,0 +1,63 @@
+Test Plan for Game Testing
+
+Objective:
+The objective of this test plan is to identify and document at least 3 known bugs in the game. The testing will involve playing the game multiple times to ensure thorough coverage and encountering different scenarios.
+
+Scope:
+This test plan covers testing for the game to identify bugs in its functionality, gameplay, and user interface.
+
+Test Environment:
+
+Device: PC running Windows 10
+Browser: Google Chrome version 98.0.4758.102
+Internet connection
+Test Cases:
+
+Test Case 1: Verify Game Start
+
+Description: Ensure the game starts properly upon clicking the "Play" button.
+Steps:
+Launch the game.
+Click on the "Play" button.
+Expected Result: The game should start and display the game board.
+Test Case 2: Verify Game Play
+
+Description: Test the core gameplay functionality.
+Steps:
+Start a new game.
+Make moves according to the game rules.
+Attempt to win the game.
+Expected Result: The game should progress smoothly without any unexpected behavior.
+Test Case 3: Verify Win Condition
+
+Description: Test if the game correctly identifies the win condition.
+Steps:
+Play the game until a win condition is met.
+Check if the game declares the player as the winner.
+Expected Result: The game should display a message indicating the player's victory.
+Test Execution:
+
+Test #1: Verify Game Start
+
+Status: Pass
+Notes: The game started without any issues, and the game board was displayed correctly.
+Test #2: Verify Game Play
+
+Status: Pass
+Notes: The gameplay proceeded smoothly, and no unexpected behavior was observed during the game.
+Test #3: Verify Win Condition
+
+Status: Pass
+Notes: The game correctly identified the win condition, and the victory message was displayed as expected.
+Bugs Found:
+
+Bug Report #1: Incorrect Score Calculation
+Description: After completing a game, the score displayed is not consistent with the player's performance.
+Steps to Reproduce:
+Start a new game.
+Play until the game ends.
+Note down the score displayed at the end of the game.
+Actual Result: The displayed score is higher/lower than expected based on the player's performance.
+Expected Result: The score should accurately reflect the player's performance during the game.
+Conclusion:
+Overall, the game performed well during testing, with no critical issues found except for the score calculation bug. Further testing may be required to identify any additional bugs or edge cases. Possible issue with See all bots section as well
