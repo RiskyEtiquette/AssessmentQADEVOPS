@@ -1,0 +1,38 @@
+                 _____________________________________________________________
+                |                                                             |
+                |                          Deployment                          |
+                |_____________________________________________________________|
+                                /                     \
+                               /                       \
+                              /                         \
+                             /                           \
+                            /                             \
+                           /                               \
+  GitHub Repository    Local Development       Continuous Integration/
+   (Version Control)     Environment            Continuous Deployment
+    _______________         _______________            __________________
+   |               |       |               |          |                  |
+   |   GitHub      |       |   Local       |          |    CI/CD Tools   |
+   |  Repository   |  -->  | Development   |  -->     | (e.g., Jenkins, |
+   |_______________|       | Environment   |          |   Travis CI)     |
+                            |_______________|          |__________________|
+                                    |
+                                    | Deployment
+                                    v
+                            ______________________
+                           |                      |
+                           |   Production Server  |
+                           |    (Web Hosting)     |
+                           |______________________|
+
+Explanation:
+
+GitHub Repository (Version Control): This is where the web application's source code is stored and managed using version control. Developers push code changes to GitHub, collaborate on features, and maintain a history of changes.
+
+Local Development Environment: Developers work on their local machines, using development tools, text editors, and running the application locally to test and debug code changes.
+
+Continuous Integration/Continuous Deployment (CI/CD) Tools: CI/CD tools automate the process of building, testing, and deploying code changes. They integrate with the GitHub repository and trigger automated tests and deployments upon code commits. Examples of CI/CD tools include Jenkins, Travis CI, CircleCI, etc.
+
+Continuous Integration/Continuous Deployment (CI/CD): This process involves automating the testing and deployment of code changes to the production server. After code changes are pushed to GitHub, CI/CD tools pull the latest code, run tests (continuous integration), and deploy the code to the production server (continuous deployment) if all tests pass.
+
+Production Server (Web Hosting): This is where the web application is deployed and accessible to users over the internet. The production server hosts the application, serves web pages, processes user requests, and manages data storage. It ensures the availability, reliability, and security of the application in a production environment.
